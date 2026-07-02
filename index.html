@@ -7,6 +7,10 @@
     <title>Find My Vegan</title>
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B1%3C/text%3E%3C/svg%3E">
+
+    <!-- BEGIN ITEMLIST_LDJSON -->
+    <!-- END ITEMLIST_LDJSON -->
+
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
@@ -30,12 +34,18 @@
                     <div id="category-list" class="category-list is-collapsed">
                         <button id="cat-toggle" class="cat-toggle" type="button" aria-expanded="false"
                             data-toggle-for="categories" data-label="Categories">+ Categories</button>
-                        <div class="cat-pills-wrap"></div>
+                        <div class="cat-pills-wrap">
+                            <!-- BEGIN CATEGORY_PILLS -->
+                            <!-- END CATEGORY_PILLS -->
+                        </div>
                     </div>
                     <div id="language-list" class="category-list is-collapsed">
                         <button id="lang-toggle" class="cat-toggle" type="button" aria-expanded="false"
                             data-toggle-for="languages" data-label="Languages">+ Languages</button>
-                        <div class="cat-pills-wrap"></div>
+                        <div class="cat-pills-wrap">
+                            <!-- BEGIN LANGUAGE_PILLS -->
+                            <!-- END LANGUAGE_PILLS -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -43,9 +53,19 @@
     </header>
 
     <main>
-        <div id="cards-grid" class="cards-grid"></div>
+        <div id="cards-grid" class="cards-grid">
+            <!-- BEGIN CARDS_GRID -->
+            <!-- END CARDS_GRID -->
+        </div>
         <nav class="pagination" id="pagination"></nav>
     </main>
+
+    <noscript>
+        <section aria-label="All vegan creators (no JavaScript view)">
+            <!-- BEGIN NOSCRIPT_LISTING -->
+            <!-- END NOSCRIPT_LISTING -->
+        </section>
+    </noscript>
 
     <footer class="site-footer">
         <p>made with 🌿 for the vegan community</p>

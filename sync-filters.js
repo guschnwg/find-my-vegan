@@ -5,6 +5,12 @@
  * Reads data.json and regenerates the static filter pills
  * (category-list and language-list) inside index.html.
  *
+ * Pills are written into the region delimited by
+ *   <!-- BEGIN CATEGORY_PILLS --> ... <!-- END CATEGORY_PILLS -->
+ * and
+ *   <!-- BEGIN LANGUAGE_PILLS --> ... <!-- END LANGUAGE_PILLS -->
+ * inside their respective <div class="cat-pills-wrap"> wrappers.
+ *
  * Usage:
  *   node sync-filters.js
  */
@@ -32,16 +38,12 @@ function buildCategoryList(items) {
             counts.set(c, (counts.get(c) || 0) + 1);
         }
     }
-    const pills = [...counts.entries()]
+    return [...counts.entries()]
         .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
         .map(([name, count]) =>
-            `                    <button class="cat-pill is-hidden" data-cat="${name}">${name} <span class="cat-count">${count}</span></button>`
+            `                            <button class="cat-pill is-hidden" data-cat="${name}">${name} <span class="cat-count">${count}</span></button>`
         )
         .join('\n');
-    const toggle = `                    <button id="cat-toggle" class="cat-toggle" type="button" aria-expanded="false" data-toggle-for="categories" data-label="Categories">+ Categories</button>`;
-    const wrapOpen = `                    <div class="cat-pills-wrap">`;
-    const wrapClose = `                    </div>`;
-    return [toggle, wrapOpen, pills, wrapClose].join('\n');
 }
 
 function buildLanguageList(items) {
@@ -51,39 +53,30 @@ function buildLanguageList(items) {
             counts.set(it.language, (counts.get(it.language) || 0) + 1);
         }
     }
-    const pills = [...counts.entries()]
+    return [...counts.entries()]
         .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
         .map(([code, count]) => {
             const icon = LANG_ICONS[code] || code;
-            return `                    <button class="cat-pill lang-pill is-hidden" data-lang="${code}">${icon} <span class="cat-count">${count}</span></button>`;
+            return `                            <button class="cat-pill lang-pill is-hidden" data-lang="${code}">${icon} <span class="cat-count">${count}</span></button>`;
         })
         .join('\n');
-    const toggle = `                    <button id="lang-toggle" class="cat-toggle" type="button" aria-expanded="false" data-toggle-for="languages" data-label="Languages">+ Languages</button>`;
-    const wrapOpen = `                    <div class="cat-pills-wrap">`;
-    const wrapClose = `                    </div>`;
-    return [toggle, wrapOpen, pills, wrapClose].join('\n');
 }
 
-function findMatchingDivEnd(html, startIdx) {
-    let depth = 1;
-    let i = startIdx;
-    while (i < html.length && depth > 0) {
-        const open = html.indexOf('<div', i);
-        const close = html.indexOf('</div>', i);
-        if (close === -1) return -1;
-        if (open !== -1 && open < close) { depth++; i = open + 4; }
-        else { depth--; i = close + 6; }
+function replaceMarker(html, beginMarker, endMarker, newContent) {
+    const beginRe = new RegExp(`<!--\\s*BEGIN\\s+${beginMarker}\\s*-->`);
+    const endRe = new RegExp(`<!--\\s*END\\s+${endMarker}\\s*-->`);
+    const beginMatch = html.match(beginRe);
+    const endMatch = html.match(endRe);
+    if (!beginMatch || !endMatch) {
+        throw new Error(`Marker not found in index.html: ${beginMarker} / ${endMarker}`);
     }
-    return i - 6;
-}
-
-function replaceContainer(html, openTag, newContent) {
-    const openIdx = html.indexOf(openTag);
-    if (openIdx === -1) throw new Error(`Could not locate ${openTag}`);
-    const startIdx = openIdx + openTag.length;
-    const endIdx = findMatchingDivEnd(html, startIdx);
-    if (endIdx === -1) throw new Error(`Could not find matching </div> for ${openTag}`);
-    return html.slice(0, startIdx) + '\n' + newContent + '\n        ' + html.slice(endIdx);
+    if (beginMatch.index >= endMatch.index) {
+        throw new Error(`BEGIN marker must come before END marker: ${beginMarker}`);
+    }
+    const before = html.slice(0, beginMatch.index + beginMatch[0].length);
+    const after = html.slice(endMatch.index);
+    const sep = (newContent.endsWith('\n') || newContent === '') ? '' : '\n';
+    return before + '\n' + newContent + sep + after;
 }
 
 function main() {
@@ -98,8 +91,8 @@ function main() {
     const newCats = buildCategoryList(data);
     const newLangs = buildLanguageList(data);
 
-    html = replaceContainer(html, '<div id="category-list" class="category-list is-collapsed">', newCats);
-    html = replaceContainer(html, '<div id="language-list" class="category-list is-collapsed">', newLangs);
+    html = replaceMarker(html, 'CATEGORY_PILLS', 'CATEGORY_PILLS', '\n' + newCats + '\n                        ');
+    html = replaceMarker(html, 'LANGUAGE_PILLS', 'LANGUAGE_PILLS', '\n' + newLangs + '\n                        ');
 
     fs.writeFileSync(HTML_FILE, html);
     console.log(`Synced filters from ${data.length} entries.`);
