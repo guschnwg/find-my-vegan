@@ -31,7 +31,7 @@ jobs:
           mkdir -p dist
           npx --yes terser@5.48.0 app.js --compress --mangle --output dist/app.js
           npx --yes clean-css-cli@5.6.3 styles.css -o dist/styles.css
-          npx --yes html-minifier-terser@7.2.0 --collapse-whitespace --remove-comments --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --minify-css --minify-js index.html -o dist/index.html
+          npx --yes html-minifier-terser@7.2.0 --collapse-whitespace --remove-comments --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --minify-css true --minify-js true index.html -o dist/index.html
           node -e "require('fs').writeFileSync('dist/data.json', JSON.stringify(JSON.parse(require('fs').readFileSync('data.json','utf8'))))"
 
       - name: Upload artifact
