@@ -32,12 +32,16 @@ function buildCategoryList(items) {
             counts.set(c, (counts.get(c) || 0) + 1);
         }
     }
-    return [...counts.entries()]
+    const pills = [...counts.entries()]
         .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
         .map(([name, count]) =>
-            `                    <button class="cat-pill" data-cat="${name}">${name} <span class="cat-count">${count}</span></button>`
+            `                    <button class="cat-pill is-hidden" data-cat="${name}">${name} <span class="cat-count">${count}</span></button>`
         )
         .join('\n');
+    const toggle = `                    <button id="cat-toggle" class="cat-toggle" type="button" aria-expanded="false" data-toggle-for="categories" data-label="Categories">+ Categories</button>`;
+    const wrapOpen = `                    <div class="cat-pills-wrap">`;
+    const wrapClose = `                    </div>`;
+    return [toggle, wrapOpen, pills, wrapClose].join('\n');
 }
 
 function buildLanguageList(items) {
@@ -47,13 +51,17 @@ function buildLanguageList(items) {
             counts.set(it.language, (counts.get(it.language) || 0) + 1);
         }
     }
-    return [...counts.entries()]
+    const pills = [...counts.entries()]
         .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
         .map(([code, count]) => {
             const icon = LANG_ICONS[code] || code;
-            return `                    <button class="cat-pill lang-pill" data-lang="${code}">${icon} <span class="cat-count">${count}</span></button>`;
+            return `                    <button class="cat-pill lang-pill is-hidden" data-lang="${code}">${icon} <span class="cat-count">${count}</span></button>`;
         })
         .join('\n');
+    const toggle = `                    <button id="lang-toggle" class="cat-toggle" type="button" aria-expanded="false" data-toggle-for="languages" data-label="Languages">+ Languages</button>`;
+    const wrapOpen = `                    <div class="cat-pills-wrap">`;
+    const wrapClose = `                    </div>`;
+    return [toggle, wrapOpen, pills, wrapClose].join('\n');
 }
 
 function findMatchingDivEnd(html, startIdx) {
@@ -90,8 +98,8 @@ function main() {
     const newCats = buildCategoryList(data);
     const newLangs = buildLanguageList(data);
 
-    html = replaceContainer(html, '<div id="category-list" class="category-list">', newCats);
-    html = replaceContainer(html, '<div id="language-list" class="category-list">', newLangs);
+    html = replaceContainer(html, '<div id="category-list" class="category-list is-collapsed">', newCats);
+    html = replaceContainer(html, '<div id="language-list" class="category-list is-collapsed">', newLangs);
 
     fs.writeFileSync(HTML_FILE, html);
     console.log(`Synced filters from ${data.length} entries.`);

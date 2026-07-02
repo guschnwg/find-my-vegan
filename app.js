@@ -177,19 +177,72 @@ $(function () {
         $('#clear-filters').prop('hidden', cats.size === 0 && langs.size === 0 && !q);
     }
 
-    function renderCategoryList() {
-        $('#category-list .cat-pill').each(function () {
-            const cat = $(this).data('cat');
-            $(this).toggleClass('active', state.activeCategories.has(cat));
+    function getListConfig(type) {
+        if (type === 'categories') {
+            return {
+                listId: '#category-list',
+                stateSet: state.activeCategories,
+                pillAttr: 'cat'
+            };
+        }
+        return {
+            listId: '#language-list',
+            stateSet: state.activeLanguages,
+            pillAttr: 'lang'
+        };
+    }
+
+    function updateVisibilityFor(type) {
+        const cfg = getListConfig(type);
+        const $list = $(cfg.listId);
+        const expanded = $list.hasClass('is-expanded');
+        const hasSelection = cfg.stateSet.size > 0;
+        $list.find('.cat-pill').each(function () {
+            const value = $(this).data(cfg.pillAttr);
+            const isActive = cfg.stateSet.has(value);
+            if (!hasSelection) {
+                $(this).toggleClass('is-hidden', !expanded);
+            } else if (expanded) {
+                $(this).removeClass('is-hidden');
+            } else {
+                $(this).toggleClass('is-hidden', !isActive);
+            }
         });
     }
 
-    function renderLanguageList() {
-        $('#language-list .cat-pill').each(function () {
-            const lang = $(this).data('lang');
-            $(this).toggleClass('active', state.activeLanguages.has(lang));
+    function renderList(type) {
+        const cfg = getListConfig(type);
+        const $list = $(cfg.listId);
+        $list.find('.cat-pill').each(function () {
+            const value = $(this).data(cfg.pillAttr);
+            $(this).toggleClass('active', cfg.stateSet.has(value));
+        });
+
+        const anySelected = cfg.stateSet.size > 0;
+        $list.toggleClass('has-selection', anySelected);
+        const expanded = $list.hasClass('is-expanded');
+
+        const label = $list.find('.cat-toggle').data('label') || type;
+        $list.find('.cat-toggle').each(function () {
+            const $t = $(this);
+            $t.text((expanded ? '− ' : '+ ') + label);
+            $t.attr('aria-expanded', expanded ? 'true' : 'false');
         });
     }
+
+    function renderCategoryList() { renderList('categories'); }
+    function renderLanguageList() { renderList('languages'); }
+    function updateCategoryVisibility() { updateVisibilityFor('categories'); }
+    function updateLanguageVisibility() { updateVisibilityFor('languages'); }
+
+    $(document).on('click', '.cat-toggle', function () {
+        const type = $(this).data('toggle-for');
+        if (!type) return;
+        const cfg = getListConfig(type);
+        $(cfg.listId).toggleClass('is-expanded');
+        updateVisibilityFor(type);
+        renderList(type);
+    });
 
     // Events
     $(document).on('click', '.page-btn', function () {
@@ -237,6 +290,8 @@ $(function () {
             state.activeCategories.add(cat);
         }
         applyFilter();
+        updateCategoryVisibility();
+        updateLanguageVisibility();
     });
 
     $(document).on('click', '.chip:not(.chip-lang)', function () {
@@ -247,6 +302,8 @@ $(function () {
             state.activeCategories.add(cat);
         }
         applyFilter();
+        updateCategoryVisibility();
+        updateLanguageVisibility();
     });
 
     $(document).on('click', '.chip-lang', function () {
@@ -258,6 +315,8 @@ $(function () {
             state.activeLanguages.add(lang);
         }
         applyFilter();
+        updateCategoryVisibility();
+        updateLanguageVisibility();
     });
 
     $(document).on('click', '.lang-pill', function () {
@@ -268,6 +327,8 @@ $(function () {
             state.activeLanguages.add(lang);
         }
         applyFilter();
+        updateCategoryVisibility();
+        updateLanguageVisibility();
     });
 
     $('#clear-filters').on('click', function () {
@@ -275,6 +336,8 @@ $(function () {
         state.activeLanguages.clear();
         $('#search').val('');
         applyFilter();
+        updateCategoryVisibility();
+        updateLanguageVisibility();
     });
 
     // Boot

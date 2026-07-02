@@ -26,8 +26,18 @@
                     <input type="text" id="search" placeholder="Search by name, category, language...">
                     <button id="clear-filters" class="clear-btn" hidden>Clear filters</button>
                 </div>
-                <div id="category-list" class="category-list"></div>
-                <div id="language-list" class="category-list"></div>
+                <div class="filters-row">
+                    <div id="category-list" class="category-list is-collapsed">
+                        <button id="cat-toggle" class="cat-toggle" type="button" aria-expanded="false"
+                            data-toggle-for="categories" data-label="Categories">+ Categories</button>
+                        <div class="cat-pills-wrap"></div>
+                    </div>
+                    <div id="language-list" class="category-list is-collapsed">
+                        <button id="lang-toggle" class="cat-toggle" type="button" aria-expanded="false"
+                            data-toggle-for="languages" data-label="Languages">+ Languages</button>
+                        <div class="cat-pills-wrap"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
