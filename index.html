@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find My Vegan</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B1%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="header-col header-col-title">
+                <h1 class="logo">
+                    <span class="logo-leaf">🌱</span>
+                    Find My Vegan
+                </h1>
+                <p class="tagline">Discover amazing vegan creators from around the world</p>
+            </div>
+            <div class="header-col header-col-search">
+                <div class="search-wrap">
+                    <input type="text" id="search" placeholder="Search by name, category, language...">
+                    <button id="clear-filters" class="clear-btn" hidden>Clear filters</button>
+                </div>
+                <div id="category-list" class="category-list"></div>
+                <div id="language-list" class="category-list"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="cards-grid" class="cards-grid"></div>
+        <nav class="pagination" id="pagination"></nav>
+    </main>
+
+    <footer class="site-footer">
+        <p>made with 🌿 for the vegan community</p>
+    </footer>
+
+    <script async src="//www.instagram.com/embed.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

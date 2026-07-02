@@ -1,0 +1,942 @@
+[
+    {
+        "name": "Laura Dicker | Veg com carinho",
+        "description": "Criativa inquieta que ama comer",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/laurasdicker/",
+        "categories": [
+            "food",
+            "photo",
+            "lifestyle"
+        ],
+        "type": "self_service",
+        "hearts": 10
+    },
+    {
+        "name": "Leo Kazuya | Rolê De Vegano",
+        "description": "gay, vegano & cozinheiro 🧈",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/leokazuya/",
+        "categories": [
+            "food",
+            "lifestyle"
+        ],
+        "type": "referral",
+        "hearts": 1
+    },
+    {
+        "name": "Tabitha Brown",
+        "description": "America's Mom sharing comforting vegan recipes like viral carrot bacon",
+        "language": "en-US",
+        "url": "https://www.instagram.com/iamtabithabrown/",
+        "categories": [
+            "food",
+            "lifestyle",
+            "motivational"
+        ],
+        "type": "self_service",
+        "hearts": 95
+    },
+    {
+        "name": "Danielle Brown | Healthy Girl Kitchen",
+        "description": "Easy, wholesome vegan recipes made with simple ingredients",
+        "language": "en-US",
+        "url": "https://www.instagram.com/healthygirlkitchen/",
+        "categories": [
+            "food",
+            "lifestyle"
+        ],
+        "type": "self_service",
+        "hearts": 42
+    },
+    {
+        "name": "Joanne Molinaro | The Korean Vegan",
+        "description": "James Beard Award-winning author pairing Korean-inspired vegan dishes with storytelling",
+        "language": "en-US",
+        "url": "https://www.instagram.com/thekoreanvegan/",
+        "categories": [
+            "food",
+            "storytelling",
+            "lifestyle"
+        ],
+        "type": "self_service",
+        "hearts": 78
+    },
+    {
+        "name": "Lauren Toyota | Hot For Food",
+        "description": "Vegan comfort food from mac and cheese to indulgent burgers and dips",
+        "language": "en-CA",
+        "url": "https://www.instagram.com/hotforfood/",
+        "categories": [
+            "food",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 56
+    },
+    {
+        "name": "Rachel Ama",
+        "description": "Vibrant recipes inspired by Caribbean and West African roots",
+        "language": "en-GB",
+        "url": "https://www.instagram.com/rachelama_/",
+        "categories": [
+            "food",
+            "video",
+            "culture"
+        ],
+        "type": "self_service",
+        "hearts": 49
+    },
+    {
+        "name": "Jasmine Briones | Sweet Simple Vegan",
+        "description": "Satisfying oil-free and gluten-free recipes that keep things simple",
+        "language": "en-US",
+        "url": "https://www.instagram.com/sweetsimplevegan/",
+        "categories": [
+            "food",
+            "lifestyle"
+        ],
+        "type": "self_service",
+        "hearts": 38
+    },
+    {
+        "name": "Chocolate Covered Katie",
+        "description": "Healthier vegan desserts that feel indulgent without being overcomplicated",
+        "language": "en-US",
+        "url": "https://www.instagram.com/chocolatecoveredkatie/",
+        "categories": [
+            "food",
+            "dessert"
+        ],
+        "type": "self_service",
+        "hearts": 67
+    },
+    {
+        "name": "Richa Hingle | Vegan Richa",
+        "description": "Bold, flavor-packed vegan recipes inspired by Indian cuisine and global flavors",
+        "language": "en-US",
+        "url": "https://www.instagram.com/veganricha/",
+        "categories": [
+            "food",
+            "culture"
+        ],
+        "type": "self_service",
+        "hearts": 60
+    },
+    {
+        "name": "Turnip Vegan",
+        "description": "Todd Anderson, the Mushroom King, creating innovative plant-based dishes with fungi",
+        "language": "en-US",
+        "url": "https://www.instagram.com/turnipvegan/",
+        "categories": [
+            "food",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 33
+    },
+    {
+        "name": "ElaVegan | Michaela Vais",
+        "description": "Vibrant photography and vegan gluten-free recipes ranging from hearty meals to cakes",
+        "language": "en-US",
+        "url": "https://www.instagram.com/elavegan/",
+        "categories": [
+            "food",
+            "photo",
+            "baking"
+        ],
+        "type": "self_service",
+        "hearts": 72
+    },
+    {
+        "name": "BOSH!",
+        "description": "Henry and Ian create quick, affordable vegan meals that appeal to a wide audience",
+        "language": "en-GB",
+        "url": "https://www.instagram.com/bosh.tv/",
+        "categories": [
+            "food",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 80
+    },
+    {
+        "name": "Gaz Oakley",
+        "description": "Professionally trained chef elevating vegan cuisine with restaurant-quality dishes",
+        "language": "en-GB",
+        "url": "https://www.instagram.com/gazoakley/",
+        "categories": [
+            "food",
+            "video",
+            "chef"
+        ],
+        "type": "self_service",
+        "hearts": 55
+    },
+    {
+        "name": "Nisha Vora | Rainbow Plant Life",
+        "description": "Culinary technique with bold flavors using tools like the Instant Pot for elevated meals",
+        "language": "en-US",
+        "url": "https://www.instagram.com/rainbowplantlife/",
+        "categories": [
+            "food",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 64
+    },
+    {
+        "name": "Sweet Potato Soul | Jenne Claiborne",
+        "description": "Comforting, soulful vegan recipes rooted in whole, natural ingredients",
+        "language": "en-US",
+        "url": "https://www.instagram.com/sweetpotatosoul/",
+        "categories": [
+            "food",
+            "lifestyle"
+        ],
+        "type": "self_service",
+        "hearts": 70
+    },
+    {
+        "name": "Maya Leinenbach | Fit Green Mind",
+        "description": "Quick, creative vegan recipes that make plant-based cooking feel simple and exciting",
+        "language": "en-US",
+        "url": "https://www.instagram.com/fitgreenmind/",
+        "categories": [
+            "food",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 36
+    },
+    {
+        "name": "Caitlin Shoemaker | From My Bowl",
+        "description": "Simple, budget-friendly mostly whole-food recipes with a calm minimalist aesthetic",
+        "language": "en-US",
+        "url": "https://www.instagram.com/frommybowl/",
+        "categories": [
+            "food",
+            "lifestyle"
+        ],
+        "type": "self_service",
+        "hearts": 41
+    },
+    {
+        "name": "Carleigh Bodrug | PlantYou",
+        "description": "Best-selling cookbook author specializing in zero-waste and scrappy cooking",
+        "language": "en-US",
+        "url": "https://www.instagram.com/plantyou/",
+        "categories": [
+            "food",
+            "lifestyle",
+            "zero-waste"
+        ],
+        "type": "self_service",
+        "hearts": 58
+    },
+    {
+        "name": "Max La Manna",
+        "description": "Low-waste chef focused on sustainable cooking and reducing environmental impact",
+        "language": "en-GB",
+        "url": "https://www.instagram.com/maxlamanna/",
+        "categories": [
+            "food",
+            "sustainability"
+        ],
+        "type": "self_service",
+        "hearts": 47
+    },
+    {
+        "name": "Chef AJ",
+        "description": "Whole-food plant-based lifestyle free from added oil, sugar and salt",
+        "language": "en-US",
+        "url": "https://www.instagram.com/therealchefaj/",
+        "categories": [
+            "food",
+            "health",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 44
+    },
+    {
+        "name": "The Happy Pear",
+        "description": "Irish twins David and Stephen Flynn bringing joy and positivity to vegan cooking",
+        "language": "en-IE",
+        "url": "https://www.instagram.com/thehappypear/",
+        "categories": [
+            "food",
+            "lifestyle",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 52
+    },
+    {
+        "name": "Ella Mills | Deliciously Ella",
+        "description": "One of the most popular vegan brands with recipes, products and a deli",
+        "language": "en-GB",
+        "url": "https://www.instagram.com/deliciouslyella/",
+        "categories": [
+            "food",
+            "lifestyle",
+            "brand"
+        ],
+        "type": "self_service",
+        "hearts": 90
+    },
+    {
+        "name": "Fearne Cotton",
+        "description": "UK television broadcaster sharing favorite vegan recipes and wellness content",
+        "language": "en-GB",
+        "url": "https://www.instagram.com/fearnecotton/",
+        "categories": [
+            "lifestyle",
+            "wellness",
+            "food"
+        ],
+        "type": "self_service",
+        "hearts": 35
+    },
+    {
+        "name": "Niomi Smart",
+        "description": "Early viral vegan influencer advocating sustainability and ethical veganism",
+        "language": "en-GB",
+        "url": "https://www.instagram.com/niomismart/",
+        "categories": [
+            "food",
+            "lifestyle",
+            "sustainability"
+        ],
+        "type": "self_service",
+        "hearts": 53
+    },
+    {
+        "name": "Lucy Watson",
+        "description": "TV star and model with her own plant-based restaurant Tell Your Friends in London",
+        "language": "en-GB",
+        "url": "https://www.instagram.com/lucywatson/",
+        "categories": [
+            "food",
+            "lifestyle"
+        ],
+        "type": "self_service",
+        "hearts": 31
+    },
+    {
+        "name": "Earthy Andy | Andrea Hannemann",
+        "description": "Author of Plant Over Processed promoting a high-carb low-fat vegan lifestyle",
+        "language": "en-US",
+        "url": "https://www.instagram.com/earthyandy/",
+        "categories": [
+            "food",
+            "lifestyle"
+        ],
+        "type": "self_service",
+        "hearts": 62
+    },
+    {
+        "name": "Alexis Nikole | Black Forager",
+        "description": "Vegan forager sharing wild plant recipes and edutainment",
+        "language": "en-US",
+        "url": "https://www.instagram.com/blackforager/",
+        "categories": [
+            "food",
+            "foraging",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 65
+    },
+    {
+        "name": "Rose | Cheap Lazy Vegan",
+        "description": "Showing that vegan food can be cheap and easy with a focus on Korean flavors",
+        "language": "en-CA",
+        "url": "https://www.instagram.com/cheaplazyvegan/",
+        "categories": [
+            "food",
+            "video",
+            "budget"
+        ],
+        "type": "self_service",
+        "hearts": 50
+    },
+    {
+        "name": "Chloe Coscarelli | Chef Chloe",
+        "description": "Award-winning vegan chef and first vegan winner of Food Network's Cupcake Wars",
+        "language": "en-US",
+        "url": "https://www.instagram.com/chefchloe/",
+        "categories": [
+            "food",
+            "baking",
+            "chef"
+        ],
+        "type": "self_service",
+        "hearts": 48
+    },
+    {
+        "name": "Alexa Soto | Alexa Fueled Naturally",
+        "description": "Mexican food blogger, recipe developer and mental health advocate based in San Diego",
+        "language": "en-US",
+        "url": "https://www.instagram.com/alexafuelednaturally/",
+        "categories": [
+            "food",
+            "culture",
+            "photo"
+        ],
+        "type": "self_service",
+        "hearts": 32
+    },
+    {
+        "name": "Kaylie Grace | Purely Kaylie",
+        "description": "Plant-based foodie, recipe developer and food photographer sharing treats",
+        "language": "en-US",
+        "url": "https://www.instagram.com/purelykaylie/",
+        "categories": [
+            "food",
+            "baking",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 26
+    },
+    {
+        "name": "Elisa | Happy Skin Kitchen",
+        "description": "Plant-based recipes born from a journey healing hormonal acne",
+        "language": "en-GB",
+        "url": "https://www.instagram.com/happyskinkitchen/",
+        "categories": [
+            "food",
+            "wellness",
+            "photo"
+        ],
+        "type": "self_service",
+        "hearts": 28
+    },
+    {
+        "name": "Liz Miu",
+        "description": "Asian home cook sharing fun vegan recipes with playful branding",
+        "language": "en-AU",
+        "url": "https://www.instagram.com/itslizmiu/",
+        "categories": [
+            "food",
+            "video",
+            "culture"
+        ],
+        "type": "self_service",
+        "hearts": 30
+    },
+    {
+        "name": "Liv B",
+        "description": "Video content creator focused on plant-based sweet treats and savory bakes",
+        "language": "en-US",
+        "url": "https://www.instagram.com/itslivb/",
+        "categories": [
+            "food",
+            "baking",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 27
+    },
+    {
+        "name": "Neto Craves",
+        "description": "Personal Mexican/Texan chef sharing creative vegan meals for about 10 years",
+        "language": "en-US",
+        "url": "https://www.instagram.com/netocraves/",
+        "categories": [
+            "food",
+            "video",
+            "culture"
+        ],
+        "type": "self_service",
+        "hearts": 22
+    },
+    {
+        "name": "Roxy & Ben | So Vegan",
+        "description": "Simple vegan recipes with an app containing 350+ plant-based recipes",
+        "language": "en-GB",
+        "url": "https://www.instagram.com/sovegan/",
+        "categories": [
+            "food",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 39
+    },
+    {
+        "name": "Jade | Panaceas Pantry",
+        "description": "Wholefoods recipes that nourish, heal and celebrate, based near Melbourne",
+        "language": "en-AU",
+        "url": "https://www.instagram.com/panaceas_pantry/",
+        "categories": [
+            "food",
+            "health",
+            "baking"
+        ],
+        "type": "self_service",
+        "hearts": 24
+    },
+    {
+        "name": "Toni Okamoto | Plant Based on a Budget",
+        "description": "Making a healthy vegan diet accessible and affordable with budget-friendly recipes",
+        "language": "en-US",
+        "url": "https://www.instagram.com/plantbasedonabudget/",
+        "categories": [
+            "food",
+            "budget",
+            "lifestyle"
+        ],
+        "type": "self_service",
+        "hearts": 45
+    },
+    {
+        "name": "Brandi Doming | The Vegan 8",
+        "description": "Flavorful filling recipes using eight ingredients or fewer, all oil-free",
+        "language": "en-US",
+        "url": "https://www.instagram.com/thevegan8/",
+        "categories": [
+            "food",
+            "health"
+        ],
+        "type": "self_service",
+        "hearts": 34
+    },
+    {
+        "name": "Dreena Burton",
+        "description": "25 years of vegan recipe creation using unexpected ingredients for delicious flavors",
+        "language": "en-US",
+        "url": "https://www.instagram.com/dreenaburton/",
+        "categories": [
+            "food",
+            "wellness"
+        ],
+        "type": "self_service",
+        "hearts": 29
+    },
+    {
+        "name": "Ashley Madden | Rise Shine Cook",
+        "description": "Recipe developer, food photographer and holistic nutritionist sharing oil-free WFPB dishes",
+        "language": "en-CA",
+        "url": "https://www.instagram.com/_rriisseshinecook/",
+        "categories": [
+            "food",
+            "photo",
+            "health"
+        ],
+        "type": "self_service",
+        "hearts": 23
+    },
+    {
+        "name": "Katie Simmons | Plants-Rule",
+        "description": "Chicago personal chef drawing on world travels for nourishing plant-based recipes",
+        "language": "en-US",
+        "url": "https://www.instagram.com/chefkatiesimmons/",
+        "categories": [
+            "food",
+            "chef",
+            "travel"
+        ],
+        "type": "self_service",
+        "hearts": 21
+    },
+    {
+        "name": "India Reynolds | Recipes from Reyn",
+        "description": "Love Island star sharing delicious and healthy vegan recipe creations",
+        "language": "en-GB",
+        "url": "https://www.instagram.com/recipesfromreyn/",
+        "categories": [
+            "food",
+            "lifestyle"
+        ],
+        "type": "self_service",
+        "hearts": 19
+    },
+    {
+        "name": "Michelle Cehn | World of Vegan",
+        "description": "Founder of World of Vegan inspiring positive change through creative activism",
+        "language": "en-US",
+        "url": "https://www.instagram.com/michellecehn/",
+        "categories": [
+            "food",
+            "activism",
+            "lifestyle"
+        ],
+        "type": "self_service",
+        "hearts": 25
+    },
+    {
+        "name": "Radhi Devlukia-Shetty",
+        "description": "Blending Ayurvedic principles with plant-based recipes and wellness practices",
+        "language": "en-GB",
+        "url": "https://www.instagram.com/radhidevlukia/",
+        "categories": [
+            "food",
+            "wellness",
+            "ayurveda"
+        ],
+        "type": "self_service",
+        "hearts": 43
+    },
+    {
+        "name": "Kristina | FullyRaw Kristina",
+        "description": "Raw vegan recipes centered on fresh fruits and vegetables",
+        "language": "en-US",
+        "url": "https://www.instagram.com/fullyrawkristina/",
+        "categories": [
+            "food",
+            "raw",
+            "wellness"
+        ],
+        "type": "self_service",
+        "hearts": 37
+    },
+    {
+        "name": "Ellen Fisher",
+        "description": "Plant-based family life, homeschooling and raising vegan children",
+        "language": "en-US",
+        "url": "https://www.instagram.com/ellenfisher/",
+        "categories": [
+            "food",
+            "family",
+            "lifestyle"
+        ],
+        "type": "self_service",
+        "hearts": 40
+    },
+    {
+        "name": "Nora Taylor | Nora Cooks Vegan",
+        "description": "Reliable approachable recipes that consistently deliver on flavor",
+        "language": "en-US",
+        "url": "https://www.instagram.com/nora_cooks_vegan_/",
+        "categories": [
+            "food",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 18
+    },
+    {
+        "name": "Cleodia Martinez",
+        "description": "Plant-based versions of traditional Filipino dishes honoring her cultural roots",
+        "language": "en-US",
+        "url": "https://www.instagram.com/cleodia/",
+        "categories": [
+            "food",
+            "culture",
+            "health"
+        ],
+        "type": "self_service",
+        "hearts": 17
+    },
+    {
+        "name": "Fabiola | Shine With Plants",
+        "description": "Colorful creative plant-based meals for the whole family including kids",
+        "language": "en-US",
+        "url": "https://www.instagram.com/shinewithplants/",
+        "categories": [
+            "food",
+            "family",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 20
+    },
+    {
+        "name": "VegetariRango | Flavio Giusti",
+        "description": "Programa de culinária vegana apresentado por Flavio Giusti — receitas simples, práticas e sem frescura",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/vegetarirango/",
+        "categories": [
+            "food",
+            "video",
+            "chef"
+        ],
+        "type": "self_service",
+        "hearts": 78
+    },
+    {
+        "name": "VegNice | Eventos Veganos",
+        "description": "Eventos veganos desde 2012 salvando vidas",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/vegniceoficial/",
+        "categories": [
+            "food",
+            "events",
+            "lifestyle"
+        ],
+        "type": "self_service",
+        "hearts": 54
+    },
+    {
+        "name": "Tá na Mesa Vegg",
+        "description": "Cozinha afetiva e vida vegana — marmitas congeladas em Floripa, receitas no YouTube",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/tnmvegg/",
+        "categories": [
+            "food",
+            "lifestyle",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 71
+    },
+    {
+        "name": "Caiçara Vegan Fest",
+        "description": "Projeto de eventos veganos na Baixada Santista — libertação animal e apoio ao pequeno empreendedor",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/caicaraveganfest/",
+        "categories": [
+            "events",
+            "activism",
+            "lifestyle"
+        ],
+        "type": "self_service",
+        "hearts": 6
+    },
+    {
+        "name": "Quitute Praiaia",
+        "description": "Quitutes veganos com sabor de praia",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/quitutepraiaia/",
+        "categories": [
+            "food",
+            "baking"
+        ],
+        "type": "self_service",
+        "hearts": 14
+    },
+    {
+        "name": "VegGui",
+        "description": "Receitas veganas práticas e saborosas para o dia a dia",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/veggui/",
+        "categories": [
+            "food",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 22
+    },
+    {
+        "name": "Hera Veggie",
+        "description": "Culinária vegana com tempero e afeto",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/heraveggie/",
+        "categories": [
+            "food",
+            "lifestyle"
+        ],
+        "type": "self_service",
+        "hearts": 11
+    },
+    {
+        "name": "Sita Vegana",
+        "description": "Receitas veganas com raiz e tradição",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/sita.vegana/",
+        "categories": [
+            "food",
+            "culture"
+        ],
+        "type": "self_service",
+        "hearts": 13
+    },
+    {
+        "name": "Isla Vegana Ush",
+        "description": "Alimentação vegetal consciente e saborosa",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/islaveganaush/",
+        "categories": [
+            "food",
+            "wellness"
+        ],
+        "type": "self_service",
+        "hearts": 9
+    },
+    {
+        "name": "Raiz Vegana RJ",
+        "description": "Raízes veganas no Rio de Janeiro — comida de verdade",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/raizveganarj/",
+        "categories": [
+            "food",
+            "culture"
+        ],
+        "type": "self_service",
+        "hearts": 16
+    },
+    {
+        "name": "Vegano da Periferia",
+        "description": "Acreditamos numa causa acessível para todas e todos — não importa onde você mora, importa como você pensa",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/veganoperiferico/",
+        "categories": [
+            "food",
+            "activism",
+            "lifestyle"
+        ],
+        "type": "self_service",
+        "hearts": 88
+    },
+    {
+        "name": "Master Veggie BR",
+        "description": "O Espaço Vegano de Santos desde 2017",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/masterveggie.br/",
+        "categories": [
+            "food",
+            "community"
+        ],
+        "type": "self_service",
+        "hearts": 21
+    },
+    {
+        "name": "Guia Vegano Veadeiros",
+        "description": "Guia de opções veganas na Chapada dos Veadeiros",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/guiaveganoveadeiros/",
+        "categories": [
+            "food",
+            "travel",
+            "guide"
+        ],
+        "type": "self_service",
+        "hearts": 8
+    },
+    {
+        "name": "O Vegano Criativo",
+        "description": "Receitas criativas e acessíveis para o dia a dia vegano",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/oveganocriativo/",
+        "categories": [
+            "food",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 18
+    },
+    {
+        "name": "Vegain Sarah",
+        "description": "Vida vegana com sabor e praticidade",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/vegainsarah/",
+        "categories": [
+            "food",
+            "lifestyle"
+        ],
+        "type": "self_service",
+        "hearts": 15
+    },
+    {
+        "name": "Doralina Vegana",
+        "description": "Receitas caseiras e afetivas veganas",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/doralinavegana/",
+        "categories": [
+            "food",
+            "family"
+        ],
+        "type": "self_service",
+        "hearts": 12
+    },
+    {
+        "name": "Rafa Figueredo",
+        "description": "Culinária vegana com técnica e criatividade",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/rafa_figueredo/",
+        "categories": [
+            "food",
+            "chef"
+        ],
+        "type": "self_service",
+        "hearts": 17
+    },
+    {
+        "name": "Ponta de Faca Vegana",
+        "description": "Técnicas, cortes e receitas veganas com precisão",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/pontadefacavegana/",
+        "categories": [
+            "food",
+            "chef",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 19
+    },
+    {
+        "name": "Wassen Bakes",
+        "description": "Padaria vegana artesanal",
+        "language": "en-US",
+        "url": "https://www.instagram.com/wassembakes/",
+        "categories": [
+            "food",
+            "baking"
+        ],
+        "type": "self_service",
+        "hearts": 24
+    },
+    {
+        "name": "Miyoko Schinner",
+        "description": "Chef, activist and founder of Miyoko's Creamery — plant-based cheese pioneer",
+        "language": "en-US",
+        "url": "https://www.instagram.com/miyokoschinner/",
+        "categories": [
+            "food",
+            "chef",
+            "brand"
+        ],
+        "type": "self_service",
+        "hearts": 82
+    },
+    {
+        "name": "Carol Pop Vegan",
+        "description": "Receitas veganas com diversão e cor",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/carolpopvegan/",
+        "categories": [
+            "food",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 23
+    },
+    {
+        "name": "Pop Vegan Food",
+        "description": "Comida vegana popular, acessível e deliciosa",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/popveganfood/",
+        "categories": [
+            "food",
+            "video"
+        ],
+        "type": "self_service",
+        "hearts": 20
+    },
+    {
+        "name": "Piccoli Cucina",
+        "description": "Cozinha vegana com alma italiana",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/piccolicucina/",
+        "categories": [
+            "food",
+            "culture",
+            "chef"
+        ],
+        "type": "self_service",
+        "hearts": 25
+    },
+    {
+        "name": "Kamili Piccoli",
+        "description": "Receitas veganas com afeto e tradição italiana",
+        "language": "pt-BR",
+        "url": "https://www.instagram.com/kamilipiccoli/",
+        "categories": [
+            "food",
+            "culture"
+        ],
+        "type": "self_service",
+        "hearts": 21
+    }
+]
